@@ -18,3 +18,11 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: oak9 Analysis Task@2
+  inputs:
+    serviceEndpoint: 'oak9 Integration Testing'
+    projectName: 'proj-autotesting-3'
+    environmentName: 'env-autotesting-3GUR96Zc'
+    qualityGate: 'None'
+    pollingTimeoutSec: '300'
+    oak9APIEndpoint: https://devapi.oak9.cloud
